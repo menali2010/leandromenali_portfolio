@@ -406,7 +406,7 @@ with tab3:
 
         <style>
         #tagcloud span {
-            color: #f5f5f5 !important; /* cor gelo */
+            color: #00C2FF !important; /* cor gelo */
             font-weight: bold;
             font-size: 14px;
         }
