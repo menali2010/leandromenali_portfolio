@@ -474,6 +474,17 @@ with tab3:
     with col2:
         st.write("- Automação de Processos")
 
+    st.subheader("BI & Análise")
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.write("- Data Analysis")
+        st.write("- Data Visualization")
+
+    with col2:
+        st.write("- Storytelling com Dados")
+        st.write("- Construção de KPIs")
 
     st.subheader("Engenharia & Tratamento de Dados")
 
@@ -482,12 +493,12 @@ with tab3:
     with col1:
         st.write("- ETL")
         st.write("- Modelagem de Dados")
-        st.write("- Data Analysis/Visualization")
+        
 
     with col2:
         st.write("- APIs")
         st.write("- Automação de Processos")
-        st.write("- Storytelling")
+        
 
 
     st.subheader("Soft Skills")
@@ -505,7 +516,7 @@ with tab3:
         st.write("- Pensamento Orientado a Negócio")
         st.write("- Resolução de Problemas")
         st.write("- Pensamento Analítico")
-        st.write("- Resolução de Problemas")
+        st.write("- Atenção a Detalhes")
         st.write("- Adaptabilidade")
     
 
