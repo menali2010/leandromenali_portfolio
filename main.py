@@ -1,8 +1,5 @@
 #importar bibliotecas
 import streamlit as st
-import pandas as pd
-import yfinance as yf
-from datetime import timedelta
 import base64
 import streamlit.components.v1 as components
 
