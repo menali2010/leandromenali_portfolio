@@ -481,10 +481,12 @@ with tab3:
     with col1:
         st.write("- Data Analysis")
         st.write("- Data Visualization")
+        st.write("- Definição de Métricas e KPIs")
 
     with col2:
         st.write("- Storytelling com Dados")
-        st.write("- Construção de KPIs")
+        st.write("- Definição de Métricas e KPIs")
+        st.write("- Identificação de Insights para Negócio")
 
     st.subheader("Engenharia & Tratamento de Dados")
 
