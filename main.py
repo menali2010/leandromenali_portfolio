@@ -448,55 +448,72 @@ with tab3:
     """, unsafe_allow_html=True)
 
     
+    st.subheader("Linguagens & Ferramentas")
+
     col1, col2, col3 = st.columns(3)
 
     with col1:
-        st.subheader("Hard Skills")
-        
-        st.write("- Pacote Office")
-        st.progress(1.0)
         st.write("- Python")
-        st.progress(0.9)
-        st.write("- Power BI")
-        st.progress(0.9)
-        st.write("- VBA")
-        st.progress(0.9)
         st.write("- SQL")
-        st.progress(0.9)
-        st.write("- Data Analysis")
-        st.progress(0.9) 
-        st.write("- Data Visualization")
-        st.progress(0.9)   
-        st.write("- Storytelling")
-        st.progress(0.9)     
-        st.write("- Automação de Processos")
-        st.progress(0.9)    
-        st.write("- Modelagem de Dados")
-        st.progress(0.85)
-        st.write("- ETL")
-        st.progress(0.85)
-        st.write("- APIs")
-        st.progress(0.85)
-        st.write("- Tableau")
-        st.progress(0.5)
-        st.write("- Agentes de IA")
-        st.progress(0.5)
-        
 
+    with col2:
+        st.write("- VBA")
+        st.write("- Pacote Office")
+    
     with col3:
-        st.subheader("Soft Skills")
-        st.write("- Pensamento Analítico")
-        st.write("- Pensamento Orientado a Negócio")
-        st.write("- Comunicação Clara com Stakeholders")
-        st.write("- Storytelling com Dados")
-        st.write("- Resolução de Problemas")
+        st.write("- Power BI")
+        st.write("- Tableau")
+
+
+    st.subheader("IA aplicada a Dados")
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.write("- Agentes de IA")
+    with col2:
+        st.write("- Automação de Processos")
+
+
+    st.subheader("Engenharia & Tratamento de Dados")
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.write("- ETL")
+        st.write("- Modelagem de Dados")
+        st.write("- Data Analysis/Visualization")
+
+    with col2:
+        st.write("- APIs")
+        st.write("- Automação de Processos")
+        st.write("- Storytelling")
+
+
+    st.subheader("Soft Skills")
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.write("- Trabalho em Equipe")   
         st.write("- Pensamento Crítico")
-        st.write("- Organização e Gestão de Prioridades")
-        st.write("- Trabalho em Equipe")
+        st.write("- Comunicação Clara")
         st.write("- Proatividade")
         st.write("- Autonomia")
-        st.write("- Atenção a Detalhes")
+
+    with col2:
+        st.write("- Pensamento Orientado a Negócio")
+        st.write("- Resolução de Problemas")
+        st.write("- Pensamento Analítico")
+        st.write("- Resolução de Problemas")
         st.write("- Adaptabilidade")
+    
+
+        
+        
+
+
+    
 
     
 with tab4:
