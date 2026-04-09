@@ -41,7 +41,7 @@ div[data-baseweb="tab-list"] button p {
     color: inherit !important;
 }
 
-div[data-baseweb="tab-list"] button[aria-selected="true"] { border-bottom: 3px solid #00C2FF; }
+div[data-baseweb="tab-list"] button[aria-selected="true"] { border-bottom: 3px solid #00C2FF !important; }
 
 /* Hover */
 div[data-baseweb="tab-list"] button:hover {
