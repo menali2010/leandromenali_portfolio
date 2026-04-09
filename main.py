@@ -18,49 +18,43 @@ img_pibic = carregar_imagem_base64("pibic.png")
 
 idioma = st.toggle("🌎 English")
 st.markdown("""
-<div style="text-align: center; padding: 10px 0;">
-    <h1 style="margin-bottom: 5px;">💻 Portfolio - Leandro Menali</h1>
-        
-</div>
-""", unsafe_allow_html=True)
-
-
-
-st.markdown("""
 <style>
+
+/* Container */
 div[data-baseweb="tab-list"] {
     justify-content: center;
-}
-/* Tabs - texto */
-div[data-baseweb="tab-list"] button {
-    font-weight: 600 !important;
-    
-}
-/* Garantir que o texto interno também fique bold */
-div[data-baseweb="tab-list"] button p {
-    font-weight: 600 !important;
-}
-
-div[data-baseweb="tab-list"] button[aria-selected="true"] {
-    border-bottom: 3px solid #00C2FF;
-}
-            
-div[data-baseweb="tab-list"] button:hover {
-    color: #00C2FF;
-}
-
-div[data-baseweb="tab-list"] {
     gap: 20px;
 }
 
+/* Botão da tab */
 div[data-baseweb="tab-list"] button {
+    font-weight: 600 !important;
     padding: 10px 20px;
-}
-div[data-baseweb="tab-list"] button[aria-selected="true"] {
-    background-color: rgba(0,194,255,0.1);
+    color: #ffffff !important;
+    background-color: transparent !important;
     border-radius: 8px;
 }
-          
+
+/* Texto interno */
+div[data-baseweb="tab-list"] button p {
+    font-weight: 600 !important;
+    color: inherit !important;
+}
+
+/* Hover */
+div[data-baseweb="tab-list"] button:hover {
+    color: #00C2FF !important;
+    background-color: rgba(0,194,255,0.08) !important;
+}
+
+/* Aba selecionada */
+div[data-baseweb="tab-list"] button[aria-selected="true"] {
+    color: #00C2FF !important;
+    background-color: rgba(0,194,255,0.12) !important;
+    border-radius: 8px;
+    border-bottom: 3px solid #00C2FF !important;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
