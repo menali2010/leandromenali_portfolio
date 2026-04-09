@@ -41,7 +41,7 @@ div[data-baseweb="tab-list"] button p {
     color: inherit !important;
 }
 
-div[data-baseweb="tab-list"] button[aria-selected="true"] { border-bottom: 3px solid #00C2FF !important; }
+
 
 /* Hover */
 div[data-baseweb="tab-list"] button:hover {
@@ -55,6 +55,7 @@ div[data-baseweb="tab-list"] button[aria-selected="true"] {
     background-color: rgba(0,194,255,0.12) !important;
     border-radius: 8px;
     border-bottom: 3px solid #00C2FF !important;
+    box-shadow: none !important;
 }
 
 </style>
