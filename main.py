@@ -58,6 +58,12 @@ div[data-baseweb="tab-list"] button[aria-selected="true"] {
     box-shadow: none !important;
 }
 
+div[data-baseweb="tab-list"] button[aria-selected="true"],
+div[data-baseweb="tab-list"] button[aria-selected="true"]:hover,
+div[data-baseweb="tab-list"] button[aria-selected="true"]:focus {
+    border-bottom: 3px solid #00C2FF !important;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
