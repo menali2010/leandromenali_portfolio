@@ -20,6 +20,39 @@ idioma = st.toggle("🌎 English")
 st.markdown("""
 <style>
 
+/* Track (fundo do toggle) quando ligado */
+div[data-testid="stToggle"] > label > div[data-baseweb="switch"] > div {
+    background-color: rgba(0,194,255,0.4) !important;
+}
+
+/* Thumb (bolinha) quando ligado */
+div[data-testid="stToggle"] input:checked + div {
+    background-color: #00C2FF !important;
+}
+
+/* Thumb (bolinha) geral */
+div[data-testid="stToggle"] div[role="switch"] {
+    background-color: #ffffff !important;
+}
+
+/* Estado ligado (override principal) */
+div[data-testid="stToggle"] input:checked + div {
+    background-color: #00C2FF !important;
+}
+
+/* Hover */
+div[data-testid="stToggle"] div[role="switch"]:hover {
+    box-shadow: 0 0 0 2px rgba(0,194,255,0.3) !important;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
+
+####tab
+st.markdown("""
+<style>
+
 /* Container */
 div[data-baseweb="tab-list"] {
     justify-content: center;
