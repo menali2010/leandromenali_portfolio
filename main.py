@@ -52,18 +52,7 @@ div[data-baseweb="tab-list"] button[aria-selected="true"] {
     color: #00C2FF !important;
     background-color: rgba(0,194,255,0.12) !important;
     border-radius: 8px;
-    border-bottom: none !important;
-    position: relative;
-}
-
-div[data-baseweb="tab-list"] button[aria-selected="true"]::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -2px;
-    height: 3px;
-    background-color: #00C2FF !important;
+    border-bottom: 3px solid #00C2FF !important;
 }
 
 </style>
