@@ -41,10 +41,12 @@ div[data-baseweb="tab-list"] button p {
     color: inherit !important;
 }
 
+div[data-baseweb="tab-list"] button[aria-selected="true"] { border-bottom: 3px solid #00C2FF; }
+
 /* Hover */
 div[data-baseweb="tab-list"] button:hover {
     color: #00C2FF !important;
-    
+    background-color: rgba(0,194,255,0.08) !important;
 }
 
 /* Aba selecionada */
