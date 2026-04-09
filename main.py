@@ -44,7 +44,7 @@ div[data-baseweb="tab-list"] button p {
 /* Hover */
 div[data-baseweb="tab-list"] button:hover {
     color: #00C2FF !important;
-    background-color: rgba(0,194,255,0.08) !important;
+    
 }
 
 /* Aba selecionada */
