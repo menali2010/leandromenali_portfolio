@@ -16,38 +16,10 @@ img_renova = carregar_imagem_base64("renova.png")
 img_pibic = carregar_imagem_base64("pibic.png")
 
 
+
+
+
 idioma = st.toggle("🌎 English")
-st.markdown("""
-<style>
-
-/* Track (fundo do toggle) quando ligado */
-div[data-testid="stToggle"] > label > div[data-baseweb="switch"] > div {
-    background-color: rgba(0,194,255,0.4) !important;
-}
-
-/* Thumb (bolinha) quando ligado */
-div[data-testid="stToggle"] input:checked + div {
-    background-color: #00C2FF !important;
-}
-
-/* Thumb (bolinha) geral */
-div[data-testid="stToggle"] div[role="switch"] {
-    background-color: #ffffff !important;
-}
-
-/* Estado ligado (override principal) */
-div[data-testid="stToggle"] input:checked + div {
-    background-color: #00C2FF !important;
-}
-
-/* Hover */
-div[data-testid="stToggle"] div[role="switch"]:hover {
-    box-shadow: 0 0 0 2px rgba(0,194,255,0.3) !important;
-}
-
-</style>
-""", unsafe_allow_html=True)
-
 
 ####tab
 st.markdown("""
@@ -56,7 +28,7 @@ st.markdown("""
 /* Container */
 div[data-baseweb="tab-list"] {
     justify-content: center;
-    gap: 20px;
+    gap: 0px;
 }
 
 /* Botão da tab */
@@ -99,9 +71,10 @@ div[data-baseweb="tab-highlight"] {
 """, unsafe_allow_html=True)
 
 if idioma:
-    tab1, tab2, tab3, tab4 = st.tabs([
+    tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "👤 About me", 
     "💼 Professional Experience", 
+    "📊 Projects",
     "🧠 Skills", 
     "📫 Contact"
     ])
@@ -422,9 +395,291 @@ if idioma:
             
                         
             """, unsafe_allow_html=True)
-        
 
     with tab3:
+        with st.expander("Energy Consumption Dashboard"):
+            st.markdown("<p style='text-align: center;'> <u><b>Net Load Dashboard</b></u>", unsafe_allow_html=True)
+
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard developed for net load forecast analysis, focusing on daily and hourly variations across different models and run dates.
+            <p style='text-align: justify;'>
+            The solution was built in Power BI, using data modeling and DAX measures to calculate variations, compare models, and perform temporal analysis. Data processing techniques, dynamic filters, and segmentations were applied, enabling interactive and flexible navigation.
+            <p style='text-align: justify;'>
+            The objective of the dashboard is to compare forecast scenarios, identify differences between models, and analyze load behavior over time, supporting decision-making and the interpretation of system variations.
+            </p>            
+                 
+            """, unsafe_allow_html=True)
+            st.video("BIs/CargaLiquida1.mp4")
+
+            st.markdown("<p style='text-align: center;'> <u><b>Gross Load and Temperature Dashboard</b></u>", unsafe_allow_html=True)
+
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard developed for gross load analysis with a focus on correlation with temperature, allowing the evaluation of hourly and daily variations across different models and run dates.
+            <p style='text-align: justify;'>
+            The solution was built in Power BI, using data modeling and DAX measures to calculate variations, compare scenarios, and integrate climate variables. Data organization techniques, dynamic filters, and segmentations were applied, enabling an interactive and exploratory analysis.
+            <p style='text-align: justify;'>
+            The objective of the dashboard is to identify patterns and relationships between load and temperature, evaluating possible correlations and supporting the interpretation of the impact of climate factors on energy consumption.
+            </p>            
+                 
+            """, unsafe_allow_html=True)
+            st.video("BIs/CargaLiquida2.mp4")
+
+            st.markdown("<p style='text-align: center;'> <u><b>Weekly Load Forecast Dashboard</b></u>", unsafe_allow_html=True)
+
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard developed for monitoring weekly load forecasts, enabling continuous comparison between forecasted and actual values throughout the operational week.
+            <p style='text-align: justify;'>
+            The solution was built in Power BI, using data modeling and DAX measures to calculate variations, consolidate indicators, and analyze adherence between models (DECOMP) and actual data (IPDO). Dynamic updating techniques, historical comparisons, and interactive filters were applied to support data exploration.
+            <p style='text-align: justify;'>
+            The objective of the dashboard is to monitor the daily evolution of forecasts, evaluate deviations (delta) between forecasted and actual values, and analyze model accuracy over time, supporting decision-making and operational monitoring.           
+            </p>                           
+            """, unsafe_allow_html=True)
+            st.video("BIs/CargaLiquida3.mp4")
+
+            st.markdown("<p style='text-align: center;'> <u><b>Structural Load Dashboard</b></u>", unsafe_allow_html=True)
+
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard developed for structural load forecast analysis, integrating different temporal views and comparisons between historical data and future projections.
+            <p style='text-align: justify;'>
+            The solution was built in Power BI, using data modeling and DAX measures to consolidate indicators, analyze variations, and compare scenarios. Multiple data sources were integrated, including PEN projections, DECOMP revisions, and macroeconomic indicators such as GDP (Focus), along with the application of dynamic filters and segmentations for interactive exploration.
+            <p style='text-align: justify;'>
+            The objective of the dashboard is to monitor the evolution of load projections, evaluate revisions over time, and analyze consistency across different scenarios, supporting the interpretation of the structural behavior of energy demand.
+            </p>            
+                 
+            """, unsafe_allow_html=True)
+            st.video("BIs/CargaLiquida4.mp4")
+
+            st.markdown("<p style='text-align: center;'> <u><b>Load Historical Dashboard</b></u>", unsafe_allow_html=True)
+
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard developed for analyzing energy load behavior, focusing on the distribution across subsystems and the temporal evolution of consumption.
+            <p style='text-align: justify;'>
+            The solution was built in Power BI, using data modeling and DAX measures to consolidate daily and monthly indicators, as well as enabling comparisons across periods and different regions of the system. Data structuring techniques, dynamic filters, and interactivity through tooltips were applied, allowing for intuitive and exploratory navigation.
+            <p style='text-align: justify;'>
+            The objective of the dashboard is to provide a clear and accessible view of energy consumption, enabling the identification of patterns, trends, and the representativeness of each subsystem, supporting comparative analysis and the interpretation of the behavior of the National Interconnected System over time.
+            </p>          
+                 
+            """, unsafe_allow_html=True)
+            st.video("BIs/CargaLiquida5.mp4")
+
+
+
+        with st.expander("EARM Dashboards (Energy Storage)"):
+            st.markdown("<p style='text-align: center;'> <u><b>EARM Historical Dashboard</b></u>", unsafe_allow_html=True)
+            
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard developed to monitor energy storage levels (EARM), enabling daily and monthly historical analysis by subsystem.
+            <p style='text-align: justify;'>
+            The solution was built in Power BI, using data modeling and DAX measures to consolidate indicators, perform temporal comparisons, and analyze seasonality. Dynamic filters for period, subsystem, and type of metric (percentage or MWm) were applied, enabling interactive and flexible navigation.
+            <p style='text-align: justify;'>
+            The objective of the dashboard is to monitor reservoir behavior over time, compare levels across different periods, and support the analysis of the system’s energy availability.
+            </p>                     
+                 
+            """, unsafe_allow_html=True)
+            st.video("BIs/EARM1.mp4")
+
+            st.markdown("<p style='text-align: center;'> <u><b>Daily EARM Monitoring Dashboard</b></u>", unsafe_allow_html=True)
+
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard developed to monitor variations in reservoir levels (EARM) by subsystem, focusing on quick and objective comparisons.
+            <p style='text-align: justify;'>
+            The solution was built in Power BI, using data modeling and DAX measures to calculate daily variations in MWm and percentage. Visual organization techniques and graphical indicators were applied to facilitate data interpretation.
+            <p style='text-align: justify;'>
+            The objective of the dashboard is to enable agile analysis of increases or decreases in reservoir levels, supporting operational monitoring and decision-making.
+                        
+            </p>            
+                 
+            """, unsafe_allow_html=True)
+            st.image("BIs/EARM2H.png")
+
+            st.markdown("<p style='text-align: center;'> <u><b>EARM Monitoring by Reservoir Dashboard</b></u>", unsafe_allow_html=True)
+
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard developed for detailed analysis of EARM by reservoir, enabling exploration by basin, subsystem, and different time granularities.
+            <p style='text-align: justify;'>
+            The solution was built in Power BI, using data modeling and DAX measures to consolidate indicators, perform temporal comparisons, and calculate the representativeness of reservoirs within each subsystem. Chained dynamic filters (basin, reservoir, and subsystem) were applied, along with visualization options in MWm and percentage.
+            <p style='text-align: justify;'>
+            The objective of the dashboard is to deepen the analysis of reservoir behavior, allowing the identification of patterns, comparison across periods, and evaluation of each asset’s contribution to the total system storage.           
+
+            </p>         
+                            
+            """, unsafe_allow_html=True)
+            st.video("BIs/EARM2.mp4")
+
+            st.markdown("<p style='text-align: center;'> <u><b>EARM Monitoring by Basin Dashboard</b></u>", unsafe_allow_html=True)
+
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard developed for EARM analysis by basin within the National Interconnected System, enabling daily, monthly, and period-over-period comparisons.
+            <p style='text-align: justify;'>
+            The solution was built in Power BI, using data modeling and DAX measures to consolidate indicators and perform temporal comparisons. Dynamic filters for period and metric type (MWm and percentage) were applied, enabling interactive and flexible navigation.
+            <p style='text-align: justify;'>
+            The objective of the dashboard is to analyze basin behavior over time, identify patterns, and support the interpretation of the evolution of energy storage within the system.
+            </p>        
+                 
+            """, unsafe_allow_html=True)
+            st.video("BIs/EARM3.mp4")
+
+
+
+        with st.expander("ENA Dashboards (Natural Inflow Energy)"):
+            st.markdown("<p style='text-align: center;'> <u><b>ENA Historical Dashboard</b></u>", unsafe_allow_html=True)
+            
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard developed for ENA analysis of the National Interconnected System, focusing on comparisons across periods and its relationship with the Long-Term Average (LTA).
+            <p style='text-align: justify;'>
+            The solution was built in Power BI, using data modeling and DAX measures to consolidate indicators, perform calculations relative to the LTA, and compare subsystems. Dynamic filters for period and metric type (MWm and percentage of LTA) were applied, along with complementary visualizations to analyze each subsystem’s contribution to the SIN.
+            <p style='text-align: justify;'>
+            The objective of the dashboard is to monitor ENA behavior over time, identify deviations from the LTA, and analyze the contribution of each subsystem within the context of the electrical system.
+            </p>      
+                 
+            """, unsafe_allow_html=True)
+            st.video("BIs/ENA1.mp4")
+
+            st.markdown("<p style='text-align: center;'> <u><b>Daily ENA Monitoring Dashboard</b></u>", unsafe_allow_html=True)
+
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard developed to monitor the daily variation of ENA by subsystem, focusing on comparison with the previous day.
+            <p style='text-align: justify;'>
+            The solution was built in Power BI, using data modeling and DAX measures to calculate daily variations. Period filters and complementary visual resources, such as bar charts, were applied to facilitate interpretation.
+            <p style='text-align: justify;'>
+            The objective of the dashboard is to enable quick analysis of ENA fluctuations, supporting operational monitoring and the identification of relevant variations in the system.
+            </p>            
+                 
+            """, unsafe_allow_html=True)
+            st.image("BIs/ENA2H.png")
+
+
+            st.markdown("<p style='text-align: center;'> <u><b>ENA by Basin Dashboard</b></u>", unsafe_allow_html=True)
+
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard developed to monitor ENA by basin, enabling daily and monthly analysis over time.
+            <p style='text-align: justify;'>
+            The solution was built in Power BI, using data modeling and DAX measures to consolidate indicators and perform temporal comparisons. Dynamic filters for period and metric type (MWm and percentage) were applied, along with integration of geographic visualization for basin location.
+            <p style='text-align: justify;'>
+            The objective of the dashboard is to analyze ENA behavior by region, compare periods, and support the interpretation of hydrological evolution in the system. The objective of the dashboard is to monitor ENA behavior over time, identify deviations from the LTA, and analyze the contribution of each subsystem within the context of the electrical system.
+            </p>           
+                 
+            """, unsafe_allow_html=True)
+            st.video("BIs/ENA2.mp4")
+
+
+            st.markdown("<p style='text-align: center;'> <u><b>Daily ENA Forecast Monitoring Dashboard</b></u>", unsafe_allow_html=True)
+
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard developed for analyzing future ENA expectations, based on different models and weekly revisions.
+            <p style='text-align: justify;'>
+            The solution was built in Power BI, using data modeling and DAX measures to consolidate indicators and compare scenarios. Dynamic filters by model and period were applied, allowing the analysis of forecast evolution over recent days.
+            <p style='text-align: justify;'>
+            The objective of the dashboard is to compare ENA projections across models and revisions, enabling the evaluation of trends and recent variations in the system’s hydrological expectations.
+            </p>            
+                 
+            """, unsafe_allow_html=True)
+            st.image("BIs/ENA1F.png")
+
+
+            st.markdown("<p style='text-align: center;'> <u><b>Comparative ENA Forecast Dashboard</b></u>", unsafe_allow_html=True)
+
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard developed for analyzing the future behavior of ENA by subsystem, on both daily and monthly bases.
+            <p style='text-align: justify;'>
+            The solution was built in Power BI, using data modeling and DAX measures to compare forecast models and different publication periods. Dynamic filters were applied, allowing switching between granularities and scenarios.
+            <p style='text-align: justify;'>
+            The objective of the dashboard is to compare ENA projections, evaluate variations between models, and analyze the evolution of hydrological expectations over time.
+            </p>             
+                 
+            """, unsafe_allow_html=True)
+            st.image("BIs/ENA2F.png")
+
+
+            st.markdown("<p style='text-align: center;'> <u><b>Comparative ENA Forecast Dashboard by Model and Period</b></u>", unsafe_allow_html=True)
+
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard developed for comparative analysis of ENA forecasts across models, focusing on daily and monthly values by subsystem.
+            <p style='text-align: justify;'>
+            The solution was built in Power BI, using data modeling and DAX measures to calculate variations between models, compare with the LTA, and consolidate monthly indicators. Dynamic filters by run date and subsystem were applied, enabling interactive and detailed analysis.
+            <p style='text-align: justify;'>
+            The objective of the dashboard is to compare forecasts across models, evaluate daily and monthly differences, and analyze ENA positioning relative to the historical average, supporting the interpretation of hydrological expectations.
+            </p>            
+                 
+            """, unsafe_allow_html=True)
+            st.image("BIs/ENA3F.png")
+        
+
+        with st.expander("PLD Dashboards"):
+            st.markdown("<p style='text-align: center;'> <u><b>PLD Historical Dashboard</b></u>", unsafe_allow_html=True)
+
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard developed for energy price analysis (PLD and CMO), focusing on daily monitoring and monthly comparisons by subsystem.
+            <p style='text-align: justify;'>
+            The solution was built in Power BI, using data modeling and DAX measures to consolidate indicators and compare variables across periods. Dynamic filters for period and subsystem were applied, enabling interactive and flexible navigation.
+            <p style='text-align: justify;'>
+            The objective of the dashboard is to monitor the difference between PLD and CMO, analyze their evolution over time, and support the interpretation of price behavior in the electrical system.
+            </p>           
+                 
+            """, unsafe_allow_html=True)
+            st.video("BIs/PLD1.mp4")
+
+            st.markdown("<p style='text-align: center;'> <u><b>PLD Monitoring Dashboard</b></u>", unsafe_allow_html=True)
+
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard developed to monitor PLD and CMO, focusing on daily and monthly analysis by subsystem.
+            <p style='text-align: justify;'>
+            The solution was built in Power BI, using data modeling and DAX measures to consolidate averages, compare variables, and analyze different granularities. Dynamic period filters were applied, allowing switching between monthly views and detailed daily breakdowns.
+            <p style='text-align: justify;'>
+            The objective of the dashboard is to monitor PLD behavior throughout the month, compare it with CMO on a monthly basis, and support more detailed analyses in specific periods.
+            </p>           
+                 
+            """, unsafe_allow_html=True)
+            st.video("BIs/PLD2.mp4")
+        
+
+        with st.expander("Precipitation Dashboards"):
+            st.markdown("<p style='text-align: center;'> <u><b>Precipitation Forecast Dashboard</b></u>", unsafe_allow_html=True)
+
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard developed for precipitation analysis, focusing on comparisons between models and variations across periods and regions.
+            <p style='text-align: justify;'>
+            The solution was built in Power BI, using data modeling and DAX measures to calculate differences between models and consolidate indicators. Dynamic filters by subsystem, period, models, and run dates were applied, along with the integration of geospatial data to associate basins and regions.
+            <p style='text-align: justify;'>
+            The objective of the dashboard is to compare precipitation forecasts across models, analyze variations over time, and support the interpretation of hydrological scenarios.
+            </p>            
+                 
+            """, unsafe_allow_html=True)
+            st.image("BIs/Precip1F.png")
+
+            st.markdown("<p style='text-align: center;'> <u><b>Precipitation Monitoring Dashboard</b></u>", unsafe_allow_html=True)
+
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard developed for analyzing observed rainfall, focusing on accumulated values by basin and comparison with forecasts from different models.
+            <p style='text-align: justify;'>
+            The solution was built in Power BI, using data modeling and DAX measures to calculate accumulations and compare observed versus forecasted values. Period filters and data organization by basin were applied, enabling a clear and objective analysis.
+            <p style='text-align: justify;'>
+            The objective of the dashboard is to compare observed precipitation with forecasts, evaluate model adherence, and support the interpretation of hydrological scenarios.
+            </p>           
+                 
+            """, unsafe_allow_html=True)
+            st.image("BIs/Precip1H.png")        
+
+    with tab4:
         #st.header("Habilidades")
         col1, col2, col3 = st.columns([1,1,1])
         with col2:
@@ -563,7 +818,7 @@ if idioma:
         
 
         
-    with tab4:
+    with tab5:
         st.header("Contact")
         st.markdown("""
         <p style='text-align: justify;'>
@@ -576,9 +831,17 @@ if idioma:
         st.write("📱 Phone: (35) 99124-3069")
         st.write("📍 Location: Passos, Minas Gerais, Brazil")
 else:
-    tab1, tab2, tab3, tab4 = st.tabs([
+    st.markdown("""
+    <style>
+    div[data-baseweb="tab"] {
+        padding: 6px 10px !important;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+    tab1, tab2, tab3, tab4, tab5 = st.tabs([
         "👤 Sobre mim", 
         "💼 Experiências Profissionais", 
+        "📊 Projetos",
         "🧠 Habilidades", 
         "📫 Contato"
     ])
@@ -652,6 +915,7 @@ else:
             </style>
         """, unsafe_allow_html=True)
         st.header("Experiências Profissionais")
+
 
         with st.expander("Grupo BC Energia (2024-2026)"):
             
@@ -900,8 +1164,292 @@ else:
                         
             """, unsafe_allow_html=True)
         
-
     with tab3:
+        with st.expander("Dashboards de Carga"):
+            st.markdown("<p style='text-align: center;'> <u><b>Dashboard de Carga Líquida</b></u>", unsafe_allow_html=True)
+            
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard desenvolvido para análise da previsão de carga líquida, com foco nas variações diárias e horárias entre diferentes modelos e datas de rodada.
+            <p style='text-align: justify;'>
+            A solução foi construída no Power BI, utilizando modelagem de dados e medidas em DAX para cálculo de variações, comparações entre modelos e análise temporal. Foram aplicadas técnicas de tratamento de dados, filtros dinâmicos e segmentações, permitindo uma navegação interativa e flexível.
+            <p style='text-align: justify;'>
+            O objetivo do dashboard é comparar cenários de previsão, identificar diferenças entre modelos e analisar o comportamento da carga ao longo do tempo, apoiando a tomada de decisão e a interpretação das variações do sistema.
+            </p>            
+                 
+            """, unsafe_allow_html=True)
+            st.video("BIs/CargaLiquida1.mp4")
+
+            st.markdown("<p style='text-align: center;'> <u><b>Dashboard de Carga Bruta e Temperatura</b></u>", unsafe_allow_html=True)
+
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard desenvolvido para análise da carga bruta com foco na correlação com a temperatura, permitindo avaliar variações horárias e diárias entre diferentes modelos e datas de rodada.
+            <p style='text-align: justify;'>
+            A solução foi construída no Power BI, utilizando modelagem de dados e medidas em DAX para cálculo de variações, comparações entre cenários e integração de variáveis climáticas. Foram aplicadas técnicas de organização de dados, filtros dinâmicos e segmentações, possibilitando uma análise interativa e exploratória.
+            <p style='text-align: justify;'>
+            O objetivo do dashboard é identificar padrões e relações entre carga e temperatura, avaliando possíveis correlações e apoiando a interpretação do impacto de fatores climáticos no consumo de energia.
+            </p>            
+                 
+            """, unsafe_allow_html=True)
+            st.video("BIs/CargaLiquida2.mp4")
+
+            st.markdown("<p style='text-align: center;'> <u><b>Dashboard de Carga Semanal Prevista</b></u>", unsafe_allow_html=True)
+
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard desenvolvido para acompanhamento da previsão de carga semanal, permitindo a comparação contínua entre valores previstos e realizados ao longo da semana operativa.
+            <p style='text-align: justify;'>
+            A solução foi construída no Power BI, utilizando modelagem de dados e medidas em DAX para cálculo de variações, consolidação de indicadores e análise de aderência entre modelos (DECOMP) e dados realizados (IPDO). Foram aplicadas técnicas de atualização dinâmica, comparações históricas e uso de filtros interativos para exploração dos dados.
+            <p style='text-align: justify;'>
+            O objetivo do dashboard é monitorar a evolução diária das previsões, avaliar desvios (delta) entre previsto e realizado e analisar a acurácia dos modelos ao longo do tempo, apoiando a tomada de decisão e o acompanhamento operacional.           
+            </p>                           
+            """, unsafe_allow_html=True)
+            st.video("BIs/CargaLiquida3.mp4")
+
+            st.markdown("<p style='text-align: center;'> <u><b>Dashboard de Carga Estrutural</b></u>", unsafe_allow_html=True)
+
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard desenvolvido para análise da previsão da carga estrutural, integrando diferentes visões temporais e comparativas entre dados históricos e projeções futuras.
+            <p style='text-align: justify;'>
+            A solução foi construída no Power BI, utilizando modelagem de dados e medidas em DAX para consolidação de indicadores, análise de variações e comparação entre cenários. Foram integradas múltiplas fontes de dados, incluindo projeções do PEN, revisões do DECOMP e indicadores macroeconômicos como o PIB (Focus), além da aplicação de filtros dinâmicos e segmentações para exploração interativa.
+            <p style='text-align: justify;'>
+            O objetivo do dashboard é permitir o acompanhamento da evolução das projeções de carga, avaliar revisões ao longo do tempo e analisar a consistência entre diferentes cenários, apoiando a interpretação do comportamento estrutural da demanda de energia.
+            </p>            
+                 
+            """, unsafe_allow_html=True)
+            st.video("BIs/CargaLiquida4.mp4")
+
+            st.markdown("<p style='text-align: center;'> <u><b>Dashboard de Histórico de Carga</b></u>", unsafe_allow_html=True)
+
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard desenvolvido para análise do comportamento da carga de energia, com foco na visualização da distribuição entre subsistemas e na evolução temporal do consumo.
+            <p style='text-align: justify;'>
+            A solução foi construída no Power BI, utilizando modelagem de dados e medidas em DAX para consolidação de indicadores diários e mensais, além de permitir comparações entre períodos e entre diferentes regiões do sistema. Foram aplicadas técnicas de estruturação de dados, filtros dinâmicos e interatividade por meio de tooltips, possibilitando uma navegação intuitiva e exploratória.
+            <p style='text-align: justify;'>
+            O objetivo do dashboard é fornecer uma visão clara e acessível do consumo de energia, permitindo identificar padrões, tendências e a representatividade de cada subsistema, apoiando análises comparativas e a interpretação do comportamento do Sistema Interligado Nacional ao longo do tempo.
+            </p>            
+                 
+            """, unsafe_allow_html=True)
+            st.video("BIs/CargaLiquida5.mp4")
+
+
+
+        with st.expander("Dashboards de EARM (Energia de Armazenamento)"):
+            st.markdown("<p style='text-align: center;'> <u><b>Dashboard de Histórico de EARM</b></u>", unsafe_allow_html=True)
+            
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard desenvolvido para acompanhamento do nível de energia de armazenamento (EARM), permitindo a análise histórica diária e mensal por subsistema.
+            <p style='text-align: justify;'>
+            A solução foi construída no Power BI, utilizando modelagem de dados e medidas em DAX para consolidação de indicadores, comparações temporais e análise de sazonalidade. Foram aplicados filtros dinâmicos de período, subsistema e tipo de grandeza (percentual ou MWm), possibilitando uma navegação interativa e flexível.
+            <p style='text-align: justify;'>
+            O objetivo do dashboard é monitorar o comportamento dos reservatórios ao longo do tempo, comparar níveis entre diferentes períodos e apoiar a análise da disponibilidade energética do sistema.
+            </p>            
+                 
+            """, unsafe_allow_html=True)
+            st.video("BIs/EARM1.mp4")
+
+            st.markdown("<p style='text-align: center;'> <u><b>Dashboard de Acompanhamento Diário de EARM</b></u>", unsafe_allow_html=True)
+            
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard desenvolvido para acompanhamento das variações do nível dos reservatórios (EARM) por subsistema, com foco em comparações rápidas e objetivas.
+            <p style='text-align: justify;'>
+            A solução foi construída no Power BI, utilizando modelagem de dados e medidas em DAX para cálculo das variações diárias em MWm e percentual. Foram aplicadas técnicas de organização visual e indicadores gráficos para facilitar a interpretação dos dados.
+            <p style='text-align: justify;'>
+            O objetivo do dashboard é permitir a análise ágil do aumento ou redução dos níveis dos reservatórios, apoiando o monitoramento operacional e a tomada de decisão.
+                        
+            </p>            
+                 
+            """, unsafe_allow_html=True)
+            st.image("BIs/EARM2H.png")
+
+            st.markdown("<p style='text-align: center;'> <u><b>Dashboard de Acompanhamento EARM por Reservatório</b></u>", unsafe_allow_html=True)
+            
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard desenvolvido para análise detalhada do EARM por reservatório, permitindo a exploração por bacia, subsistema e diferentes granularidades temporais.
+            <p style='text-align: justify;'>
+            A solução foi construída no Power BI, utilizando modelagem de dados e medidas em DAX para consolidação de indicadores, comparações temporais e cálculo de representatividade dos reservatórios dentro do subsistema. Foram aplicados filtros dinâmicos encadeados (bacia, reservatório e subsistema), além de opções de visualização em MWm e percentual.
+            <p style='text-align: justify;'>
+            O objetivo do dashboard é aprofundar a análise do comportamento dos reservatórios, permitindo identificar padrões, comparar períodos e avaliar a participação de cada ativo no armazenamento total do sistema.           
+            
+            </p>            
+                 
+            """, unsafe_allow_html=True)
+            st.video("BIs/EARM2.mp4")
+
+            st.markdown("<p style='text-align: center;'> <u><b>Dashboard de Acompanhamento EARM por Bacia</b></u>", unsafe_allow_html=True)
+            
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard desenvolvido para análise do EARM por bacia do Sistema Interligado Nacional, permitindo o acompanhamento diário, mensal e comparativo entre períodos.
+            <p style='text-align: justify;'>
+            A solução foi construída no Power BI, utilizando modelagem de dados e medidas em DAX para consolidação de indicadores e comparações temporais. Foram aplicados filtros dinâmicos de período e de grandeza (MWm e percentual), possibilitando uma navegação interativa e flexível.
+            <p style='text-align: justify;'>
+            O objetivo do dashboard é analisar o comportamento das bacias ao longo do tempo, identificar padrões e apoiar a interpretação da evolução do armazenamento de energia no sistema.
+           
+            </p>            
+                 
+            """, unsafe_allow_html=True)
+            st.video("BIs/EARM3.mp4")
+
+
+
+        with st.expander("Dashboards de ENA (Energia Natural Afluente)"):
+            st.markdown("<p style='text-align: center;'> <u><b>Dashboard de Histórico de ENA</b></u>", unsafe_allow_html=True)
+            
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard desenvolvido para análise da ENA do Sistema Interligado Nacional, com foco na comparação entre períodos e na relação com a Média de Longo Termo (MLT).
+            <p style='text-align: justify;'>
+            A solução foi construída no Power BI, utilizando modelagem de dados e medidas em DAX para consolidação de indicadores, cálculos em relação à MLT e comparações entre subsistemas. Foram aplicados filtros dinâmicos de período e de grandeza (MWm e percentual da MLT), além de visualizações complementares para análise da participação de cada subsistema no SIN.
+            <p style='text-align: justify;'>
+            O objetivo do dashboard é acompanhar o comportamento da ENA ao longo do tempo, identificar desvios em relação à MLT e analisar a contribuição de cada subsistema no contexto do sistema elétrico.
+            </p>            
+                 
+            """, unsafe_allow_html=True)
+            st.video("BIs/ENA1.mp4")
+
+            st.markdown("<p style='text-align: center;'> <u><b>Dashboard de Acompanhamento Diário de ENA</b></u>", unsafe_allow_html=True)
+            
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard desenvolvido para acompanhamento da variação diária da ENA por subsistema, com foco na comparação em relação ao dia anterior.
+            <p style='text-align: justify;'>
+            A solução foi construída no Power BI, utilizando modelagem de dados e medidas em DAX para cálculo das variações diárias. Foram aplicados filtros de período e recursos visuais complementares, como gráficos de barras, para facilitar a interpretação.
+            <p style='text-align: justify;'>
+            O objetivo do dashboard é permitir uma análise rápida das oscilações da ENA, apoiando o monitoramento operacional e a identificação de variações relevantes no sistema.
+            </p>            
+                 
+            """, unsafe_allow_html=True)
+            st.image("BIs/ENA2H.png")
+
+
+            st.markdown("<p style='text-align: center;'> <u><b>Dashboard de ENA por Bacia</b></u>", unsafe_allow_html=True)
+            
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard desenvolvido para acompanhamento da ENA por bacia, permitindo a análise diária e mensal ao longo do tempo.
+            <p style='text-align: justify;'>
+            A solução foi construída no Power BI, utilizando modelagem de dados e medidas em DAX para consolidação de indicadores e comparações temporais. Foram aplicados filtros dinâmicos de período e de grandeza (MWm e percentual), além da integração com visualização geográfica para localização das bacias.
+            <p style='text-align: justify;'>
+            O objetivo do dashboard é analisar o comportamento da ENA por região, comparar períodos e apoiar a interpretação da evolução hidrológica no sistema.O objetivo do dashboard é acompanhar o comportamento da ENA ao longo do tempo, identificar desvios em relação à MLT e analisar a contribuição de cada subsistema no contexto do sistema elétrico.
+            </p>            
+                 
+            """, unsafe_allow_html=True)
+            st.video("BIs/ENA2.mp4")
+
+
+            st.markdown("<p style='text-align: center;'> <u><b>Dashboard de Acompanhamento Diário de Previsão de ENA</b></u>", unsafe_allow_html=True)
+            
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard desenvolvido para análise das expectativas futuras de ENA, com base em diferentes modelos e revisões semanais.
+            <p style='text-align: justify;'>
+            A solução foi construída no Power BI, utilizando modelagem de dados e medidas em DAX para consolidação de indicadores e comparação entre cenários. Foram aplicados filtros dinâmicos por modelo e período, permitindo a análise da evolução das previsões nos últimos dias.
+            <p style='text-align: justify;'>
+            O objetivo do dashboard é comparar projeções de ENA entre modelos e revisões, permitindo avaliar tendências e variações recentes nas expectativas hidrológicas do sistema.
+            </p>            
+                 
+            """, unsafe_allow_html=True)
+            st.image("BIs/ENA1F.png")
+
+
+            st.markdown("<p style='text-align: center;'> <u><b>Dashboard Comparativo de Previsão de ENA</b></u>", unsafe_allow_html=True)
+            
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard desenvolvido para análise do comportamento futuro da ENA por subsistema, em bases diária e mensal.
+            <p style='text-align: justify;'>
+            A solução foi construída no Power BI, utilizando modelagem de dados e medidas em DAX para comparação entre modelos de previsão e entre diferentes períodos de publicação. Foram aplicados filtros dinâmicos que permitem alternar entre granularidades e cenários.
+            <p style='text-align: justify;'>
+            O objetivo do dashboard é comparar projeções de ENA, avaliar variações entre modelos e analisar a evolução das expectativas hidrológicas ao longo do tempo.
+            </p>             
+                 
+            """, unsafe_allow_html=True)
+            st.image("BIs/ENA2F.png")
+
+
+            st.markdown("<p style='text-align: center;'> <u><b>Dashboard Comparativo de Previsão de ENA por Modelo e Período</b></u>", unsafe_allow_html=True)
+            
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard desenvolvido para análise comparativa das previsões de ENA entre modelos, com foco em valores diários e mensais por subsistema.
+            <p style='text-align: justify;'>
+            A solução foi construída no Power BI, utilizando modelagem de dados e medidas em DAX para cálculo de variações entre modelos, comparação com a MLT e consolidação de indicadores mensais. Foram aplicados filtros dinâmicos por data de rodada e subsistema, permitindo uma análise interativa e detalhada.
+            <p style='text-align: justify;'>
+            O objetivo do dashboard é comparar previsões entre modelos, avaliar diferenças diárias e mensais e analisar o posicionamento da ENA em relação à média histórica, apoiando a interpretação das expectativas hidrológicas.
+            </p>            
+                 
+            """, unsafe_allow_html=True)
+            st.image("BIs/ENA3F.png")
+        
+
+        with st.expander("Dashboards de PLD"):
+            st.markdown("<p style='text-align: center;'> <u><b>Dashboard de Histório de PLD</b></u>", unsafe_allow_html=True)
+            
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard desenvolvido para análise dos preços de energia (PLD e CMO), com foco no acompanhamento diário e comparações mensais por subsistema.
+            <p style='text-align: justify;'>
+            A solução foi construída no Power BI, utilizando modelagem de dados e medidas em DAX para consolidação de indicadores e comparação entre variáveis e períodos. Foram aplicados filtros dinâmicos de período e subsistema, permitindo uma navegação interativa e flexível.
+            <p style='text-align: justify;'>
+            O objetivo do dashboard é monitorar a diferença entre PLD e CMO, analisar sua evolução ao longo do tempo e apoiar a interpretação do comportamento dos preços no sistema elétrico.
+            </p>            
+                 
+            """, unsafe_allow_html=True)
+            st.video("BIs/PLD1.mp4")
+
+            st.markdown("<p style='text-align: center;'> <u><b>Dashboard de Acompanhamento de PLD</b></u>", unsafe_allow_html=True)
+            
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard desenvolvido para acompanhamento do PLD e CMO, com foco na análise diária e mensal por subsistema.
+            <p style='text-align: justify;'>
+            A solução foi construída no Power BI, utilizando modelagem de dados e medidas em DAX para consolidação de médias, comparação entre variáveis e análise por diferentes granularidades. Foram aplicados filtros dinâmicos de período, permitindo alternar entre visões mensais e detalhamentos diários.
+            <p style='text-align: justify;'>
+            O objetivo do dashboard é monitorar o comportamento do PLD ao longo do mês, comparar com o CMO em bases mensais e apoiar análises mais detalhadas em períodos específicos.
+            </p>            
+                 
+            """, unsafe_allow_html=True)
+            st.video("BIs/PLD2.mp4")
+        
+
+        with st.expander("Dashboards de Precipitação"):
+            st.markdown("<p style='text-align: center;'> <u><b>Dashboard de Previsão de Precipitação</b></u>", unsafe_allow_html=True)
+            
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard desenvolvido para análise de precipitação, com foco na comparação entre modelos e variações por período e região.
+            <p style='text-align: justify;'>
+            A solução foi construída no Power BI, utilizando modelagem de dados e medidas em DAX para cálculo de diferenças entre modelos e consolidação de indicadores. Foram aplicados filtros dinâmicos por subsistema, período, modelos e datas de rodada, além da integração de dados geoespaciais para associação entre bacias e regiões.
+            <p style='text-align: justify;'>
+            O objetivo do dashboard é comparar previsões de precipitação entre modelos, analisar variações ao longo do tempo e apoiar a interpretação de cenários hidrológicos.
+            </p>            
+                 
+            """, unsafe_allow_html=True)
+            st.image("BIs/Precip1F.png")
+
+            st.markdown("<p style='text-align: center;'> <u><b>Dashboard de Acompanhamento de Precipitação</b></u>", unsafe_allow_html=True)
+            
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Dashboard desenvolvido para análise da chuva realizada, com foco no acumulado por bacia e comparação com previsões de diferentes modelos.
+            <p style='text-align: justify;'>
+            A solução foi construída no Power BI, utilizando modelagem de dados e medidas em DAX para cálculo de acumulados e comparações entre realizado e previsto. Foram aplicados filtros de período e organização dos dados por bacia, permitindo uma análise clara e objetiva.
+            <p style='text-align: justify;'>
+            O objetivo do dashboard é comparar a precipitação observada com as previsões, avaliando a aderência dos modelos e apoiando a interpretação dos cenários hidrológicos.
+                        </p>            
+                 
+            """, unsafe_allow_html=True)
+            st.image("BIs/Precip1H.png")
+
+
+    with tab4:
         #st.header("Habilidades")
         col1, col2, col3 = st.columns([1,1,1])
         with col2:
@@ -1037,10 +1585,10 @@ else:
             
 
 
-        
+            
 
         
-    with tab4:
+    with tab5:
         st.header("Contato")
         st.markdown("""
         <p style='text-align: justify;'>
@@ -1052,4 +1600,6 @@ else:
         st.write("🔗 LinkedIn: https://www.linkedin.com/in/leandro-menali-ferreira-463355165/")
         st.write("📱 Telefone: (35) 99124-3069")
         st.write("📍 Local: Passos, Minas Gerais, Brasil")
+        
+        
 
