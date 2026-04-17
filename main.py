@@ -430,7 +430,7 @@ if idioma:
             """, unsafe_allow_html=True)
             st.video("BIs/HR1.mp4")
 
-        with st.expander("Energy Consumption Dashboard"):
+        with st.expander("Energy Consumption Dashboards"):
             st.markdown("<p style='text-align: center;'> <u><b>Net Load Dashboard</b></u>", unsafe_allow_html=True)
 
             st.markdown("""
