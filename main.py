@@ -397,6 +397,39 @@ if idioma:
             """, unsafe_allow_html=True)
 
     with tab3:
+        with st.expander("HR Dashboard"):
+            st.markdown("<p style='text-align: center;'> <u><b>Human Resources Dashboard</b></u>", unsafe_allow_html=True)
+            
+            st.markdown("""
+            <p style='text-align: justify;'>
+            This project consists of the development of an interactive Human Resources dashboard in Power BI, built using fictitious data, with the objective of demonstrating not only technical proficiency in data analysis but also the ability to design analytical solutions focused on user experience and storytelling.
+            
+            <p style='text-align: justify;'>
+            The dashboard was structured to provide a comprehensive and integrated view of the workforce, including key indicators such as headcount, hires, terminations, turnover, average age, and gender distribution. The data modeling followed best practices, using DAX to create dynamic and intelligent measures capable of automatically responding to applied filters, ensuring consistency and reliability in the analysis.
+            
+            <p style='text-align: justify;'>
+            One of the key differentiators of this project is the advanced use of DAX for comparative and cumulative calculations, such as year-over-year (YoY) analysis, as well as the creation of custom metrics tailored to the Human Resources context. These measures enable a more strategic interpretation of the data, going beyond simple visualization and supporting deeper insights into organizational behavior over time.
+            
+            <p style='text-align: justify;'>
+            From a visual perspective, the dashboard was carefully designed to resemble modern digital product interfaces. HTML and CSS elements were incorporated within Power BI to create customized components such as interactive cards, indicators with percentage variation, hover effects, and dynamic visual elements. This approach significantly enhanced the visual quality of the dashboard, bringing it closer to solutions used in more sophisticated corporate environments.
+            
+            <p style='text-align: justify;'>            
+            User experience was a priority throughout the development process. The layout was organized to facilitate readability and navigation, with clear visual hierarchy, consistent use of colors and spacing, and intuitive interactions through segmented filters. Users can explore the data by department, time period, and other relevant dimensions, with immediate responses across all visuals.
+            
+            <p style='text-align: justify;'>            
+            The dashboard also incorporates different types of visualizations to support multiple analytical objectives, including bar charts, funnel charts, donut charts, and geographic maps. The use of maps enables the visualization of employee distribution by location, adding a spatial dimension to the analysis. Additionally, performance, recruitment, and satisfaction charts provide insights into workforce quality, talent acquisition efficiency, and organizational climate.
+            
+            <p style='text-align: justify;'>            
+            Another important aspect is the focus on visual consistency and identity, using design patterns such as rounded corners, subtle shadows, and microinteractions, which contribute to a more professional and polished interface. This attention to detail demonstrates not only technical skills but also sensitivity to design and usability, which are increasingly valued in the data field.
+            
+            <p style='text-align: justify;'>            
+            Overall, this project highlights the ability to transform data into strategic information through a solid combination of modeling, analysis, and design. More than a technical exercise, the dashboard was developed with a product-oriented mindset, aiming to deliver real value to end users through clarity, interactivity, and refined aesthetics.                    
+                                                    
+            </p>            
+                
+            """, unsafe_allow_html=True)
+            st.video("BIs/HR1.mp4")
+
         with st.expander("Energy Consumption Dashboard"):
             st.markdown("<p style='text-align: center;'> <u><b>Net Load Dashboard</b></u>", unsafe_allow_html=True)
 
@@ -1165,6 +1198,33 @@ else:
             """, unsafe_allow_html=True)
         
     with tab3:
+        with st.expander("Dashboards de RH"):
+            st.markdown("<p style='text-align: center;'> <u><b>Dashboard de Recursos Humanos</b></u>", unsafe_allow_html=True)
+            
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Este projeto consiste no desenvolvimento de um dashboard interativo de Recursos Humanos no Power BI, construído a partir de dados fictícios, com o objetivo de demonstrar não apenas domínio técnico em análise de dados, mas também capacidade de construção de soluções analíticas com foco em experiência do usuário e storytelling.
+            <p style='text-align: justify;'>
+            O painel foi estruturado para oferecer uma visão completa e integrada da força de trabalho, contemplando indicadores-chave como headcount, admissões, desligamentos, turnover, média de idade e distribuição por gênero. A modelagem dos dados foi realizada com base em boas práticas, utilizando DAX para construção de medidas dinâmicas e inteligentes, capazes de responder automaticamente aos filtros aplicados, garantindo consistência e confiabilidade nas análises.
+            <p style='text-align: justify;'>
+            Um dos diferenciais do projeto está na utilização avançada de DAX para cálculos comparativos e acumulados, como análises ano contra ano (YoY), além da criação de métricas customizadas voltadas para o contexto de Recursos Humanos. Essas medidas permitem uma leitura mais estratégica dos dados, indo além da simples visualização e apoiando interpretações mais profundas sobre o comportamento da organização ao longo do tempo.
+            <p style='text-align: justify;'>
+            No aspecto visual, o dashboard foi cuidadosamente desenhado para simular interfaces modernas de produtos digitais. Foram incorporados elementos de HTML e CSS dentro do Power BI para criação de componentes personalizados, como cards interativos, indicadores com variação percentual, efeitos de hover e elementos visuais dinâmicos. Essa abordagem permitiu elevar significativamente o nível estético do painel, aproximando-o de soluções utilizadas em ambientes corporativos mais sofisticados.
+            <p style='text-align: justify;'>            
+            A experiência do usuário foi uma prioridade durante o desenvolvimento. O layout foi organizado de forma a facilitar a leitura e a navegação, com hierarquia visual clara, uso consistente de cores e espaçamentos, além de interações intuitivas por meio de filtros segmentados. O usuário consegue explorar os dados por departamento, período e outras dimensões relevantes, com respostas imediatas em todos os visuais.
+            <p style='text-align: justify;'>            
+            O dashboard também incorpora diferentes tipos de visualização para atender a múltiplos objetivos analíticos, incluindo gráficos de barras, funil, rosca e mapas geográficos. O uso do mapa permite visualizar a distribuição dos colaboradores por localização, agregando uma camada espacial à análise. Já os gráficos de performance, recrutamento e satisfação fornecem insights sobre qualidade da força de trabalho, eficiência de aquisição de talentos e clima organizacional.
+            <p style='text-align: justify;'>            
+            Outro ponto relevante é a preocupação com consistência visual e construção de identidade, utilizando padrões de design como bordas arredondadas, sombras sutis e microinterações, o que contribui para uma interface mais profissional e agradável. Esse cuidado demonstra não apenas habilidade técnica, mas também sensibilidade para aspectos de design e usabilidade, cada vez mais valorizados na área de dados.
+            <p style='text-align: justify;'>            
+            De forma geral, este projeto evidencia a capacidade de transformar dados em informação estratégica por meio de uma combinação sólida de modelagem, análise e design. Mais do que um exercício técnico, o dashboard foi desenvolvido com mentalidade de produto, buscando entregar valor real ao usuário final por meio de clareza, interatividade e estética refinada.                    
+                                                
+            </p>            
+                 
+            """, unsafe_allow_html=True)
+            st.video("BIs/HR1.mp4")
+
+
         with st.expander("Dashboards de Carga"):
             st.markdown("<p style='text-align: center;'> <u><b>Dashboard de Carga Líquida</b></u>", unsafe_allow_html=True)
             
