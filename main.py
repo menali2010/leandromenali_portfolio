@@ -397,6 +397,39 @@ if idioma:
             """, unsafe_allow_html=True)
 
     with tab3:
+        with st.expander("Pizzeria Management System"):
+            st.markdown("<p style='text-align: center;'> <u><b>Pizzeria Operations & Financial Control Dashboard</b></u>", unsafe_allow_html=True)
+            
+            st.markdown("""
+            <p style='text-align: justify;'>
+            The project consists of a complete operational and financial management system developed for a traditional pizzeria with over two decades of activity, aiming to modernize and centralize all ordering, service, and cash control processes. The solution was designed to replace manual workflows with an integrated digital system, increasing operational efficiency, reducing human errors, and providing a real-time analytical view of the business.
+            
+            <p style='text-align: justify;'>
+            From a functional perspective, the system covers the entire pizzeria operation, including all main sales channels: delivery, pickup, dine-in, and all-you-can-eat service (rodízio). In the delivery module, the system organizes orders by payment type and fulfillment method, allowing revenue tracking separated into cash, PIX (instant payment), and card transactions, as well as distinguishing between delivery and pickup orders. This enables a more precise analysis of profitability per channel and improves the management of operational delivery costs.
+            
+            <p style='text-align: justify;'>
+            In the dine-in module, the system provides complete table and in-house consumption management, recording orders in a structured way and automatically separating revenue by payment method. This ensures better organization of in-person service and simplifies cash closing and order reconciliation. In the rodízio module, the system automatically tracks customers by category (adults and children), applying equivalence rules for consumption calculation and generating specific revenue metrics for this service model, which is a key part of the business.
+            
+            <p style='text-align: justify;'>
+            Additionally, the system integrates pickup order management, allowing full tracking of counter pickup sales with separated revenue and payment methods. This complete segmentation of sales channels provides a detailed operational overview, enabling the identification of the most profitable service models and those that require operational improvements.
+            
+            <p style='text-align: justify;'>
+            On the financial side, the system consolidates all data into an interactive dashboard built with a modern graphical interface, enabling the visualization of key metrics such as total revenue, revenue by payment method, number of orders per category, and operational costs such as estimated delivery expenses. The dashboard also supports date-range filtering, allowing historical analysis and performance comparison over time.
+            
+            <p style='text-align: justify;'>
+            One of the key highlights of the project is the cash closing module, which automates daily financial reconciliation. In this module, it is possible to view consolidated revenue and dynamically register operational expenses with multiple categories and responsible parties. The system automatically calculates total expenses and final cash balance, and also enables detailed report generation and thermal printer output, facilitating physical reconciliation and administrative control.
+            
+            <p style='text-align: justify;'>
+            From a technical standpoint, the system was developed in Python using PySide6 for the graphical interface, extensively leveraging components such as QMainWindow, QDialog, QScrollArea, QGridLayout, and QFrame to build a modern and responsive UI. Data persistence is handled through JSON files, ensuring simplicity and flexibility in storing operational data. The project also uses date manipulation, state control, and structured business logic to properly separate sales flows. For printing, the QPrinter library was used, enabling integration with thermal printers commonly used in commercial environments.
+            
+            <p style='text-align: justify;'>
+            As a result, the system delivered significant operational gains for the business, including greater control over all sales channels, reduced human errors in cash closing, automation of financial and operational processes, and a much clearer and more strategic view of the business. The integration of delivery, dine-in, pickup, and rodízio into a single platform enables centralized, efficient, and scalable management, raising the overall level of operational professionalism.
+            
+            </p>
+            """, unsafe_allow_html=True)
+
+            st.video("BIs/Pizzaria.mp4")
+            
         with st.expander("HR Dashboard"):
             st.markdown("<p style='text-align: center;'> <u><b>Human Resources Dashboard</b></u>", unsafe_allow_html=True)
             
@@ -1198,6 +1231,32 @@ else:
             """, unsafe_allow_html=True)
         
     with tab3:
+        with st.expander("Sistema de Controle de Pizzaria"):
+            st.markdown("<p style='text-align: center;'> <u><b>Sistema de Controle de Pizzaria</b></u>", unsafe_allow_html=True)
+            
+            st.markdown("""
+            <p style='text-align: justify;'>
+            O projeto consiste em um sistema completo de gestão operacional e financeira desenvolvido para uma pizzaria tradicional com mais de duas décadas de atuação, com o objetivo de modernizar e centralizar todos os processos de pedidos, atendimento e controle de caixa. A solução foi projetada para substituir processos manuais por um fluxo digital integrado, aumentando a eficiência operacional, reduzindo erros e fornecendo uma visão analítica detalhada do negócio em tempo real.
+            <p style='text-align: justify;'>
+            Do ponto de vista funcional, o sistema contempla toda a operação da pizzaria, abrangendo os principais canais de venda: delivery, retirada, salão e rodízio. No delivery, o sistema organiza os pedidos por tipo de pagamento e entrega, permitindo o controle de faturamento separado entre dinheiro, PIX e cartão, além de diferenciar pedidos de entrega e retirada. Isso possibilita uma análise mais precisa da lucratividade por modalidade e facilita a gestão de custos operacionais associados às entregas.
+            <p style='text-align: justify;'>
+            No atendimento de salão, o sistema permite o controle completo das mesas e consumo interno, registrando pedidos de forma estruturada e separando automaticamente os valores por forma de pagamento. Essa funcionalidade garante maior organização no atendimento presencial, além de facilitar o fechamento do caixa e a conferência de comandas. Já no módulo de rodízio, o sistema contabiliza automaticamente os clientes por categoria (adultos e crianças), aplicando regras de equivalência para cálculo de consumo e gerando métricas específicas de faturamento desse modelo de serviço, que é bastante relevante para o negócio.
+            <p style='text-align: justify;'>
+            Além disso, o sistema integra o controle de retirada, permitindo acompanhar os pedidos feitos para retirada no balcão, com separação de faturamento e forma de pagamento. Essa segmentação completa dos canais de venda proporciona uma visão detalhada da operação, permitindo identificar quais modalidades são mais rentáveis e quais demandam maior atenção operacional.
+            <p style='text-align: justify;'>            
+            Na parte financeira, o sistema consolida todos os dados em um dashboard interativo desenvolvido com interface gráfica moderna, permitindo a visualização de métricas como faturamento total, faturamento por forma de pagamento, número de pedidos por categoria e custos operacionais, como custo estimado de delivery. O painel também permite filtragem por período, possibilitando análises históricas e comparativas de desempenho.
+            <p style='text-align: justify;'>            
+            Um dos destaques do projeto é o módulo de fechamento de caixa, que automatiza o controle financeiro diário. Nele, é possível visualizar o faturamento consolidado e registrar despesas operacionais de forma dinâmica e flexível, com inclusão de múltiplas categorias e responsáveis. O sistema calcula automaticamente o total de despesas e o saldo final do caixa, além de permitir a geração de relatórios detalhados e impressão em impressora térmica, facilitando a conferência física e o controle administrativo.
+            <p style='text-align: justify;'>            
+            Do ponto de vista técnico, o sistema foi desenvolvido em Python utilizando PySide6 para a construção da interface gráfica, explorando fortemente componentes como QMainWindow, QDialog, QScrollArea, QGridLayout e QFrame para construção de uma UI moderna e responsiva. A persistência de dados é realizada através de arquivos JSON, garantindo simplicidade e flexibilidade no armazenamento das informações operacionais. O projeto também faz uso de manipulação de datas, controle de estados e lógica de negócio estruturada para separar corretamente os fluxos de venda. Para impressão, foi utilizada a biblioteca QPrinter, permitindo integração com impressoras térmicas utilizadas no ambiente comercial.
+            <p style='text-align: justify;'>            
+            Como resultado, o sistema trouxe ganhos significativos para a operação da pizzaria, como maior controle sobre todos os canais de venda, redução de falhas humanas no fechamento de caixa, automatização de processos financeiros e operacionais, além de uma visão gerencial muito mais clara e estratégica do negócio. A integração entre delivery, salão, retirada e rodízio em uma única plataforma permite uma gestão centralizada, eficiente e escalável, elevando o nível de profissionalização da operação.                    
+                                                
+            </p>            
+                 
+            """, unsafe_allow_html=True)
+            st.video("BIs/Pizzaria.mp4")
+
         with st.expander("Dashboards de RH"):
             st.markdown("<p style='text-align: center;'> <u><b>Dashboard de Recursos Humanos</b></u>", unsafe_allow_html=True)
             
