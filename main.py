@@ -14,6 +14,7 @@ img_vanzolini = carregar_imagem_base64("vanzolini.png")
 img_comerc = carregar_imagem_base64("comerc.png")
 img_renova = carregar_imagem_base64("renova.png")
 img_pibic = carregar_imagem_base64("pibic.png")
+img_anima = carregar_imagem_base64("anima.png")
 
 
 
@@ -80,6 +81,7 @@ if idioma:
     ])
 
     with tab1:
+        st.set_page_config(page_title="Leandro's Portfolio", layout="centered")
         st.header("About me  \n")
         col1, col2, col3 = st.columns([1,2,1])
 
@@ -101,16 +103,23 @@ if idioma:
         st.markdown("""
         <p style='text-align: justify;'>
         <br>
-        My name is Leandro, I am 28 years old, and I hold degrees in Science and Technology (2016–2018) and Petroleum Engineering (2019–2022) from UNIFESP, with a strong quantitative background that supports my work with data, from collection and processing to the generation of strategic insights. Over more than five years of professional experience, I have built a career focused on data analysis and decision-making support, working in diverse organizational contexts and dealing with complex, multifactorial problems.
+        My name is Leandro, I am 28 years old, and I hold a degree in Science and Technology (2016–2018) and a degree in Petroleum Engineering (2019–2022) from UNIFESP. I have a strong quantitative background that supports my work with data, from data collection and processing to the generation of strategic insights. Throughout more than five years of professional experience, I have built a career focused on data analysis, market intelligence, and decision support, working across different organizational contexts and addressing complex, multifaceted problems.
 
         <br>
         <p style='text-align: justify;'>
-        My name is Leandro, I am 28 years old, and I hold degrees in Science and Technology (2016–2018) and Petroleum Engineering (2019–2022) from UNIFESP, with a strong quantitative background that supports my work with data, from collection and processing to the generation of strategic insights. Over more than five years of professional experience, I have built a career focused on data analysis and decision-making support, working in diverse organizational contexts and dealing with complex, multifactorial problems.
+        I currently work as a Mid-Level Market Intelligence Analyst at Ânima Educação, within the Strategy area, where I develop market studies, competitive analyses, portfolio assessments, performance analyses, and studies focused on identifying opportunities and strategic drivers. My work involves transforming data from different sources into information and insights that support decisions related to expansion, brand positioning, performance, and portfolio sustainability. I also contribute to the development of KPIs, reports, and analytical materials to support strategic discussions, while developing the department's portal in Python to centralize information and analytical solutions, increasing the efficiency and accessibility of data.
 
         <p style='text-align: justify;'>
-        My work involves integrating tools and programming languages such as Python, SQL, and VBA to structure, process, and analyze large volumes of data, transforming raw information into clear, reliable, and actionable insights. I have experience using Power BI to develop dashboards and analytical reports, focusing not only on visualization but also on building data-driven narratives that support strategic and operational decision-making.
+        My work involves integrating tools and programming languages such as Python, SQL, Excel, Databricks, and VBA to structure, process, and analyze large volumes of data, transforming raw information into clear, reliable, and actionable analyses. I have experience using Power BI to develop dashboards and analytical reports, focusing not only on visualization but also on building narratives that support strategic and operational decision-making. I also use Python for process automation, development of analytical solutions, and creation of applications focused on data accessibility and exploration.
+
         <p style='text-align: justify;'>
-        Throughout my experience, I have also worked on organizing and consolidating data from multiple sources — including internal data, open data, and consultancy reports — ensuring consistency, traceability, and quality in analyses. In addition, I have been incorporating the use of artificial intelligence into my daily work to optimize analytical processes, accelerate solution development, and enhance insight generation.
+        Throughout my career, I have also worked on organizing and consolidating data from multiple sources — including internal data, open data, consulting information, and operational databases — ensuring consistency, traceability, and analytical quality. In previous roles, I worked with data from the energy and public sectors, developing scenario analyses, KPIs, territorial studies, and solutions to complex problems. In addition, I have been incorporating artificial intelligence into my daily work to optimize analytical processes, accelerate solution development, automate activities, and expand the generation of insights.
+
+        <p style='text-align: justify;'>
+        My experience also includes building end-to-end solutions, from identifying and structuring a problem, collecting and processing data, developing the analysis, and creating visualizations to making the information available to end users. This integrated perspective allows me to understand both the technical aspects of a solution and the needs of the people who will use its results to make decisions.
+
+        <p style='text-align: justify;'>
+        I work collaboratively with multidisciplinary teams, connecting technical and business areas, always focused on translating complex data into accessible information. My core values are commitment, curiosity, and continuous learning, and I am constantly seeking to strengthen my technical skills and broaden my business perspective. I believe my main differentiator is my ability to combine a strong technical foundation with analytical thinking and strategic vision, using data and technology not only to generate information, but also to support decisions, identify opportunities, and create real business impact.
         </p>
         """, unsafe_allow_html=True)
 
@@ -147,7 +156,48 @@ if idioma:
             }
             </style>
         """, unsafe_allow_html=True)
+        
         st.header("Professional Experience")
+
+        with st.expander("Ânima Educação (2024-Present)"):
+            col1, col2, col3 = st.columns([1,2,1])
+
+            with col2:
+                st.markdown(f"""
+                <div style="text-align: center;">
+                    <img src="data:image/png;base64,{img_anima}" style="
+                        width:100px;
+                        height:100px;
+                        border-radius:50%;
+                        object-fit:cover;
+                        object-position: 50% 20%;
+                        border:1px solid #ddd;
+                        box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+                    ">
+                </div>
+                """, unsafe_allow_html=True)
+
+            st.markdown("""
+            <br>
+            <p style='text-align: justify;'>
+            Currently, I work as a Market Intelligence Analyst at Ânima Educação, within the Strategy team, focusing on data analysis, market intelligence, and decision-making support. My role involves transforming data from different sources into information and insights to support strategic studies, portfolio analysis, performance evaluation, opportunity identification, and business decision-making.
+
+            <p style='text-align: justify;'>
+            I work with portfolio analyses and market studies, performing data cross-referencing, comparative analyses, KPI evaluation, trend analysis, and competitive scenario assessments. I use data to identify opportunities, understand market behaviors, and support discussions related to business expansion, brand positioning, and portfolio sustainability.
+
+            <p style='text-align: justify;'>
+            I also contribute to the development and continuous improvement of the team's internal portal using Python, designing solutions to centralize information, automate processes, and facilitate access to studies and KPIs. In this context, I work with Python, Databricks, and Excel for data processing, consolidation, analysis, and delivery, aiming to increase the efficiency and reliability of analytical processes.
+
+            <p style='text-align: justify;'>
+            My work combines quantitative analysis, business acumen, and solution development, with a focus on transforming complex data into clear and actionable insights. I also contribute to the development of KPIs, reports, and executive materials, helping different teams and leadership access reliable information to support strategic decisions.
+
+            <p style='text-align: justify;'>
+            This experience has strengthened my ability to connect technology, data, and strategy, working across the entire analytical process—from data structuring and exploration to result interpretation and the generation of business recommendations.
+
+            </p>
+            """, unsafe_allow_html=True)
+
+
 
         with st.expander("Grupo BC Energia (2024-2026)"):
             
@@ -773,7 +823,7 @@ if idioma:
             const container = '#tagcloud';
             const texts = [
                 'Python','SQL','Power BI','VBA','ETL','Modeling','APIs','Microsoft Office','Automation',
-                'Data','Storytelling', 'AI',
+                'Data','Storytelling', 'AI', 'Databricks',
                 'Comunication','Team Work','Problem Solving'
             ];
 
@@ -805,7 +855,7 @@ if idioma:
         
         st.subheader("Programming Languages & Tools")
 
-        col1, col2, col3 = st.columns(3)
+        col1, col2, col3, col4= st.columns(4)
 
         with col1:
             st.write("- Python")
@@ -818,6 +868,10 @@ if idioma:
         with col3:
             st.write("- Power BI")
             st.write("- Tableau")
+
+        with col4:
+            st.write("- Databricks")
+            st.write("- HTML/CSS")
 
 
         st.subheader("AI Applied to Data")
@@ -896,10 +950,18 @@ if idioma:
         st.write("🔗 LinkedIn: https://www.linkedin.com/in/leandro-menali-ferreira-463355165/")
         st.write("📱 Phone: (35) 99124-3069")
         st.write("📍 Location: Passos, Minas Gerais, Brazil")
+
+
+
+
+
+
 else:
+    st.set_page_config(page_title="Portfolio do Leandro", layout="centered")
     st.markdown("""
     <style>
     div[data-baseweb="tab"] {
+        min-width: 350px !important;
         padding: 6px 10px !important;
     }
     </style>
@@ -934,16 +996,23 @@ else:
         st.markdown("""
         <p style='text-align: justify;'>
         <br>
-        Me chamo Leandro, tenho 28 anos, sou formado em Ciência e Tecnologia (2016-2018) e Engenharia de Petróleo (2019-2022) pela UNIFESP, com uma base quantitativa sólida que sustenta minha atuação em dados, desde a coleta e tratamento até a geração de insights estratégicos. Ao longo de mais de cinco anos de experiência profissional, construí uma trajetória voltada à análise de dados e suporte à tomada de decisão, atuando em diferentes contextos organizacionais e lidando com problemas complexos e multifatoriais.
+        Me chamo Leandro, tenho 28 anos, sou formado em Ciência e Tecnologia (2016-2018) e Engenharia de Petróleo (2019-2022) pela UNIFESP, com uma base quantitativa sólida que sustenta minha atuação em dados, desde a coleta e tratamento até a geração de insights estratégicos. Ao longo de mais de cinco anos de experiência profissional, construí uma trajetória voltada à análise de dados, inteligência de mercado e suporte à tomada de decisão, atuando em diferentes contextos organizacionais e lidando com problemas complexos e multifatoriais.
 
         <br>
         <p style='text-align: justify;'>
-        Minha atuação envolve a integração de ferramentas e linguagens como Python, SQL e VBA para estruturar, tratar e analisar grandes volumes de dados, transformando informações brutas em análises claras, confiáveis e acionáveis. Tenho experiência na utilização do Power BI para desenvolvimento de dashboards e relatórios analíticos, com foco não apenas na visualização, mas na construção de narrativas que apoiem decisões estratégicas e operacionais.
+        Atualmente, atuo como Analista de Inteligência de Mercado Pleno na Ânima Educação, na área de Estratégia, onde desenvolvo estudos de mercado, análises competitivas, avaliações de portfólio, análises de performance e estudos voltados à identificação de oportunidades e direcionadores estratégicos. Minha atuação envolve transformar dados de diferentes fontes em informações e insights que apoiem decisões relacionadas à expansão, posicionamento de marcas, desempenho e sustentabilidade do portfólio. Também participo da construção de indicadores, relatórios e materiais analíticos para suporte às discussões estratégicas e desenvolvo o portal da área em Python, centralizando informações e soluções analíticas para ampliar a eficiência e acessibilidade dos dados.
 
         <p style='text-align: justify;'>
-        Ao longo da minha experiência, também atuei na organização e consolidação de dados provenientes de múltiplas fontes — incluindo dados internos, dados abertos e informações de consultorias — garantindo consistência, rastreabilidade e qualidade das análises. Além disso, venho incorporando o uso de inteligência artificial no meu dia a dia para otimizar processos analíticos, acelerar o desenvolvimento de soluções e ampliar a geração de insights.
+        Minha atuação envolve a integração de ferramentas e linguagens como Python, SQL, Excel, Databricks e VBA para estruturar, tratar e analisar grandes volumes de dados, transformando informações brutas em análises claras, confiáveis e acionáveis. Tenho experiência na utilização do Power BI para desenvolvimento de dashboards e relatórios analíticos, com foco não apenas na visualização, mas na construção de narrativas que apoiem decisões estratégicas e operacionais. Também utilizo Python para automação de processos, desenvolvimento de soluções analíticas e criação de aplicações voltadas à disponibilização e exploração de dados.
+
         <p style='text-align: justify;'>
-        Trabalho de forma colaborativa com equipes multidisciplinares, conectando áreas técnicas e de negócio, sempre com foco em traduzir dados complexos em informações acessíveis. Tenho como pilares o comprometimento, a curiosidade e o aprendizado contínuo, buscando constantemente evoluir tecnicamente e gerar impacto real por meio de soluções orientadas por dados.
+        Ao longo da minha experiência, também atuei na organização e consolidação de dados provenientes de múltiplas fontes — incluindo dados internos, dados abertos, informações de consultorias e bases operacionais — garantindo consistência, rastreabilidade e qualidade das análises. Em projetos anteriores, atuei com dados dos setores energético e público, desenvolvendo análises de cenários, indicadores, estudos territoriais e soluções para problemas complexos. Além disso, venho incorporando o uso de inteligência artificial no meu dia a dia para otimizar processos analíticos, acelerar o desenvolvimento de soluções, automatizar atividades e ampliar a geração de insights.
+
+        <p style='text-align: justify;'>
+        Minha experiência também envolve a construção de soluções end-to-end, desde a identificação e estruturação do problema, coleta e tratamento dos dados, desenvolvimento da análise e criação de visualizações até a disponibilização das informações para os usuários finais. Essa visão integrada me permite compreender tanto os aspectos técnicos de uma solução quanto as necessidades de quem utilizará os resultados para tomar decisões.
+
+        <p style='text-align: justify;'>
+        Trabalho de forma colaborativa com equipes multidisciplinares, conectando áreas técnicas e de negócio, sempre com foco em traduzir dados complexos em informações acessíveis. Tenho como pilares o comprometimento, a curiosidade e o aprendizado contínuo, buscando constantemente evoluir tecnicamente e ampliar minha visão de negócio. Acredito que meu principal diferencial está na capacidade de combinar uma base técnica sólida com pensamento analítico e visão estratégica, utilizando dados e tecnologia não apenas para gerar informações, mas para apoiar decisões, identificar oportunidades e gerar impacto real para o negócio.
         </p>
         """, unsafe_allow_html=True)
 
@@ -982,6 +1051,45 @@ else:
         """, unsafe_allow_html=True)
         st.header("Experiências Profissionais")
 
+        with st.expander("Ânima Educação (2024-Atual)"):
+            col1, col2, col3 = st.columns([1,2,1])
+
+            with col2:
+                st.markdown(f"""
+                <div style="text-align: center;">
+                    <img src="data:image/png;base64,{img_anima}" style="
+                        width:100px;
+                        height:100px;
+                        border-radius:50%;
+                        object-fit:cover;
+                        object-position: 50% 20%;
+                        border:1px solid #ddd;
+                        box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+                    ">
+                </div>
+                """, unsafe_allow_html=True)
+            st.markdown("""
+            <p style='text-align: justify;'>
+
+            <p style='text-align: justify;'>
+            Atualmente, atuo como Analista de Inteligência de Mercado Pleno na Ânima Educação, dentro da área de Estratégia, com foco em análise de dados, inteligência de mercado e suporte à tomada de decisão. Minha atuação envolve a transformação de dados de diferentes fontes em informações e insights para apoiar estudos estratégicos, análises de portfólio, avaliação de performance, identificação de oportunidades e direcionamento do negócio.
+
+            <p style='text-align: justify;'>
+            Trabalho com análises de portfólio e estudos de mercado, realizando cruzamentos de bases, análises comparativas, avaliação de indicadores, tendências e cenários competitivos. Utilizo dados para investigar oportunidades, compreender comportamentos e apoiar discussões relacionadas à expansão, posicionamento de marcas e sustentabilidade do portfólio.
+
+            <p style='text-align: justify;'>
+            Também atuo no desenvolvimento e evolução do portal da área utilizando Python, estruturando soluções para centralizar informações, automatizar processos e facilitar o acesso aos estudos e indicadores pela equipe. Nesse contexto, trabalho com Python, Databricks e Excel para tratamento, consolidação, análise e disponibilização de dados, buscando aumentar a eficiência e a confiabilidade dos processos analíticos.
+
+            <p style='text-align: justify;'>
+            Minha atuação combina análise quantitativa, visão de negócio e desenvolvimento de soluções, buscando transformar dados complexos em análises claras e acionáveis. Também participo da construção de indicadores, relatórios e materiais executivos, contribuindo para que diferentes áreas e lideranças tenham informações confiáveis para apoiar decisões estratégicas.
+
+            <p style='text-align: justify;'>
+            Essa experiência tem ampliado minha capacidade de conectar tecnologia, dados e estratégia, atuando desde a estruturação e exploração das informações até a interpretação dos resultados e geração de recomendações para o negócio.
+            
+            </p>
+            """, unsafe_allow_html=True)
+            
+            
 
         with st.expander("Grupo BC Energia (2024-2026)"):
             
@@ -1596,7 +1704,7 @@ else:
             const container = '#tagcloud';
             const texts = [
                 'Python','SQL','Power BI','VBA','ETL','Modelagem','APIs','Office','Automação',
-                'Dados','Storytelling',
+                'Dados','Storytelling', 'Databricks',
                 'Comunicação','Trabalho em Equipe','Resolução de Problemas'
             ];
 
@@ -1628,7 +1736,7 @@ else:
         
         st.subheader("Linguagens & Ferramentas")
 
-        col1, col2, col3 = st.columns(3)
+        col1, col2, col3, col4 = st.columns(4)
 
         with col1:
             st.write("- Python")
@@ -1641,6 +1749,10 @@ else:
         with col3:
             st.write("- Power BI")
             st.write("- Tableau")
+
+        with col4:
+            st.write("- Databricks")
+            st.write("- HTML/CSS")
 
 
         st.subheader("IA aplicada a Dados")
