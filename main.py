@@ -159,7 +159,7 @@ if idioma:
         
         st.header("Professional Experience")
 
-        with st.expander("Ânima Educação (2024-Present)"):
+        with st.expander("Ânima Educação (2026-Present)"):
             col1, col2, col3 = st.columns([1,2,1])
 
             with col2:
@@ -1051,7 +1051,7 @@ else:
         """, unsafe_allow_html=True)
         st.header("Experiências Profissionais")
 
-        with st.expander("Ânima Educação (2024-Atual)"):
+        with st.expander("Ânima Educação (2026-Atual)"):
             col1, col2, col3 = st.columns([1,2,1])
 
             with col2:
