@@ -81,7 +81,7 @@ if idioma:
     ])
 
     with tab1:
-        st.set_page_config(page_title="Leandro's Portfolio", layout="centered")
+        st.set_page_config(page_title="Leandro's Portfolio", page_icon= "💼", layout="centered")
         st.header("About me  \n")
         col1, col2, col3 = st.columns([1,2,1])
 
@@ -159,7 +159,7 @@ if idioma:
         
         st.header("Professional Experience")
 
-        with st.expander("Ânima Educação (2026-Present)"):
+        with st.expander("Ânima Educação (2024-Present)"):
             col1, col2, col3 = st.columns([1,2,1])
 
             with col2:
@@ -957,7 +957,7 @@ if idioma:
 
 
 else:
-    st.set_page_config(page_title="Portfolio do Leandro", layout="centered")
+    st.set_page_config(page_title="Portfolio do Leandro",  page_icon= "💼", layout="centered")
     st.markdown("""
     <style>
     div[data-baseweb="tab"] {
@@ -1051,7 +1051,7 @@ else:
         """, unsafe_allow_html=True)
         st.header("Experiências Profissionais")
 
-        with st.expander("Ânima Educação (2026-Atual)"):
+        with st.expander("Ânima Educação (2024-Atual)"):
             col1, col2, col3 = st.columns([1,2,1])
 
             with col2:
