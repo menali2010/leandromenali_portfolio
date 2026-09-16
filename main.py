@@ -447,6 +447,35 @@ if idioma:
             """, unsafe_allow_html=True)
 
     with tab3:
+        with st.expander("Market Intelligence Portal - Portfolio Insights"):
+            st.markdown("<p style='text-align: center;'> <u><b>Portfolio Insights - Market Intelligence Portal</b></u>", unsafe_allow_html=True)
+            
+            st.markdown("""
+            <p style='text-align: justify;'>
+            Portfolio Insights is an internal Market Intelligence portal developed to centralize data, analyses, and processes related to academic portfolio management, transforming information distributed across different sources and operational activities into a single, structured, and decision-oriented experience. The solution was developed with the goal of reducing manual processes, centralizing information, and providing greater agility, standardization, and reliability to the activities performed by teams.
+            <p style='text-align: justify;'>
+            The project emerged from the need to transform processes that previously relied on queries, spreadsheets, manual data manipulation, and multiple information sources into structured and integrated digital workflows. The portal allows users to work with large volumes of data, apply filters, visualize indicators and analyses, interact with tables, enter information directly through the application, and work with Excel files while keeping information centralized in a structured database.
+            <p style='text-align: justify;'>
+            More than just a dashboard, Portfolio Insights was designed as a business support tool, connecting data, business rules, analyses, and operational processes within a single application. The solution brings data analysis closer to users' daily workflows, allowing different stages of the process to be performed directly within the portal and reducing the need to switch between different tools and information sources.
+            <p style='text-align: justify;'>
+            From a functional perspective, the application supports different dimensions of the academic portfolio, providing tools for data querying, filtering, and analysis. Developed features include interactive tables, filters based on different attributes, data editing, input validation, Excel file upload and download, and mechanisms for tracking changes. This structure provides users with greater autonomy while allowing information to be handled in a more organized and standardized manner.
+            <p style='text-align: justify;'>            
+            On the data side, the application uses Python and Pandas for data processing, transformation, organization, and validation, while Databricks is used as the environment for querying, processing, and persisting data. SQL integration enables structured queries and the processing of large volumes of information. Excel remains integrated into the workflow as a complementary mechanism for data input and updates, allowing files to be uploaded, processed, and made available for download when necessary.
+            <p style='text-align: justify;'>            
+            The application was also designed to provide a user experience closer to that of a traditional web system. HTML, CSS, and Bootstrap Icons were used to customize visual elements and interface components beyond the standard capabilities of Streamlit. Interactive components, editable tables, filters, buttons, indicators, and different navigation flows were developed to create an interface better suited to users' daily workflows and the specific needs of the business.
+            <p style='text-align: justify;'>            
+            Another important aspect of the project is automation and the reduction of manual activities. The portal incorporates structural validations, data processing, business rule implementation, and input controls, reducing steps that previously had to be performed manually through spreadsheets or independent queries. The system was also structured to identify actual changes before persisting information, avoiding unnecessary database updates and making the data persistence process more controlled and efficient.
+            <p style='text-align: justify;'>            
+            The solution's architecture combines different areas of application development and data analysis, involving data engineering, application development, data processing and analysis, process automation, and data visualization. This integration allows the portal not only to present indicators but also to directly participate in the processes that generate and modify the data used by the teams.
+            <p style='text-align: justify;'>            
+            As a result, Portfolio Insights provides a more centralized, standardized, traceable, and efficient structure for managing academic portfolio information. The reduction of manual data manipulation, integration with Databricks, use of Excel as a complementary mechanism, and ability to execute different stages directly within the application contribute to faster and more organized processes, while facilitating access to the information required for analysis and strategic decision-making.
+            
+            </p>            
+                
+            """, unsafe_allow_html=True)
+            st.video("BIs/portfolioinsight.mp4")
+
+
         with st.expander("Pizzeria Management System"):
             st.markdown("<p style='text-align: center;'> <u><b>Pizzeria Operations & Financial Control Dashboard</b></u>", unsafe_allow_html=True)
             
@@ -1339,6 +1368,35 @@ else:
             """, unsafe_allow_html=True)
         
     with tab3:
+        with st.expander("Portal de Inteligência de Mercado - Portfolio Insights"):
+                    st.markdown("<p style='text-align: center;'> <u><b>Sistema de Controle de Pizzaria</b></u>", unsafe_allow_html=True)
+                    
+                    st.markdown("""
+                    <p style='text-align: justify;'>
+                    O Portfolio Insights é um portal interno de Inteligência de Mercado desenvolvido para centralizar dados, análises e processos relacionados à gestão do portfólio acadêmico, transformando informações distribuídas em diferentes fontes e atividades operacionais em uma experiência única, estruturada e orientada à tomada de decisão. A solução foi desenvolvida com o objetivo de reduzir processos manuais, centralizar informações e proporcionar maior agilidade, padronização e confiabilidade às atividades realizadas pelas equipes.
+                    <p style='text-align: justify;'>
+                    O projeto surgiu a partir da necessidade de transformar processos que anteriormente dependiam de consultas, planilhas, manipulações manuais e diferentes fontes de informação em fluxos digitais estruturados e integrados. Dessa forma, o portal permite que os usuários consultem grandes volumes de dados, apliquem filtros, visualizem indicadores e análises, interajam com tabelas, preencham informações diretamente pela aplicação e trabalhem com arquivos Excel, mantendo as informações centralizadas em uma base estruturada.
+                    <p style='text-align: justify;'>
+                    Mais do que um dashboard, o Portfolio Insights foi concebido como uma ferramenta de apoio ao negócio, conectando dados, regras de negócio, análises e processos operacionais em uma única aplicação. A solução busca aproximar a análise de dados da rotina dos usuários, permitindo que diferentes etapas do processo sejam executadas diretamente no portal, reduzindo a necessidade de alternar entre diferentes ferramentas e fontes de informação.
+                    <p style='text-align: justify;'>
+                    Do ponto de vista funcional, a aplicação permite trabalhar com diferentes dimensões do portfólio acadêmico, oferecendo recursos de consulta, filtragem e análise das informações. Entre os recursos desenvolvidos estão tabelas interativas, filtros por diferentes atributos, edição de informações, validações de preenchimento, upload e download de arquivos Excel e mecanismos para registro de alterações. Essa estrutura proporciona maior autonomia aos usuários e permite que as informações sejam manipuladas de maneira mais organizada e padronizada.
+                    <p style='text-align: justify;'>            
+                    Na parte de dados, a aplicação utiliza Python e Pandas para tratamento, transformação, organização e validação das informações, enquanto o Databricks é utilizado como ambiente de consulta, processamento e persistência dos dados. A integração com SQL permite realizar consultas e trabalhar com grandes volumes de informações de maneira estruturada. O Excel permanece integrado ao processo como mecanismo complementar de entrada e atualização de dados, permitindo que arquivos sejam carregados, processados e posteriormente disponibilizados para download quando necessário.
+                    <p style='text-align: justify;'>            
+                    A aplicação também foi desenvolvida buscando proporcionar uma experiência de utilização mais próxima de um sistema web tradicional. Para isso, foram utilizados HTML, CSS e Bootstrap Icons, permitindo personalizar elementos visuais e componentes da interface além das possibilidades padrão do Streamlit. Foram desenvolvidos componentes interativos, tabelas editáveis, filtros, botões, indicadores e diferentes fluxos de navegação, criando uma interface mais adequada à rotina dos usuários e às necessidades específicas do negócio.
+                    <p style='text-align: justify;'>            
+                    Outro ponto importante do projeto é a automação e redução de atividades manuais. O portal incorpora validações de estrutura, tratamento de dados, aplicação de regras de negócio e controles de preenchimento, reduzindo etapas que anteriormente precisavam ser executadas manualmente em planilhas ou por meio de consultas independentes. O sistema também foi estruturado para identificar alterações efetivamente realizadas antes de persistir informações, evitando atualizações desnecessárias na base e tornando o processo de gravação mais controlado e eficiente.
+                    <p style='text-align: justify;'>            
+                    A arquitetura da solução combina diferentes áreas do desenvolvimento e da análise de dados, envolvendo engenharia de dados, desenvolvimento de aplicações, tratamento e análise de dados, automação de processos e visualização de informações. Essa integração permite que o portal não apenas apresente indicadores, mas também participe diretamente dos processos que geram e modificam os dados utilizados pelas equipes.
+                    <p style='text-align: justify;'>            
+                    Como resultado, o Portfolio Insights proporciona uma estrutura mais centralizada, padronizada, rastreável e eficiente para gestão das informações do portfólio acadêmico. A redução de manipulações manuais, a integração com o Databricks, a utilização do Excel como mecanismo complementar e a possibilidade de executar diferentes etapas diretamente pela aplicação contribuem para processos mais rápidos e organizados, além de facilitar o acesso às informações necessárias para análises e decisões estratégicas.                    
+                                                       
+                    </p>            
+                         
+                    """, unsafe_allow_html=True)
+                    st.video("BIs/portfolioinsight.mp4")
+
+
         with st.expander("Sistema de Controle de Pizzaria"):
             st.markdown("<p style='text-align: center;'> <u><b>Sistema de Controle de Pizzaria</b></u>", unsafe_allow_html=True)
             
